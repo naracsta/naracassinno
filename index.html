@@ -114,34 +114,50 @@ header img {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 .beneficio {
-    background-color: rgba(3, 3, 3, 0.7); /* Fundo semi-transparente para melhorar a legibilidade */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2); /* Dourado */
-    width: 300px;
+    background-image: url('beneficios.png'); /* Imagem de fundo */
+    background-size: cover; /* Cobrir todo o card */
+    background-position: center; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Evitar repetição */
+    width: 300px; /* Largura do card */
+    height: 200px; /* Altura do card */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2); /* Sombra dourada */
+    position: relative; /* Para posicionar o conteúdo */
+    overflow: hidden; /* Garantir que nada ultrapasse o card */
     transition: transform 0.3s;
 }
 
 .beneficio:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px); /* Efeito de levantar ao passar o mouse */
 }
 
-.beneficio img {
-    width: 150px; /* Tamanho das imagens nos benefícios */
-    height: auto; /* Mantém a proporção */
-    margin-bottom: 15px;
+.beneficio-conteudo {
+    position: absolute; /* Sobrepor o conteúdo à imagem de fundo */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para melhorar a legibilidade */
+    padding: 20px;
+    color: #fff; /* Cor do texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.beneficio h3 {
+.beneficio-conteudo h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #FFD700; /* Dourado */
 }
 
-.beneficio p {
+.beneficio-conteudo p {
     font-size: 1rem;
     color: #fff;
 }
@@ -234,24 +250,28 @@ header img {
     <h2>Por Que Entrar no Grupo?</h2>
     <div class="beneficios">
         <div class="beneficio">
-            <img src="beneficios.png" alt="Estratégias Comprovadas">
-            <h3>Estratégias Comprovadas</h3>
-            <p>Aprenda técnicas com altas taxas de sucesso para maximizar seus ganhos.</p>
+            <div class="beneficio-conteudo">
+                <h3>Estratégias Comprovadas</h3>
+                <p>Aprenda técnicas com altas taxas de sucesso para maximizar seus ganhos.</p>
+            </div>
         </div>
         <div class="beneficio">
-            <img src="beneficios.png" alt="Suporte Rápido">
-            <h3>Suporte Rápido</h3>
-            <p>Conte com o meu suporte sempre que precisar.</p>
+            <div class="beneficio-conteudo">
+                <h3>Suporte Rápido</h3>
+                <p>Conte com o meu suporte sempre que precisar.</p>
+            </div>
         </div>
         <div class="beneficio">
-            <img src="beneficios.png" alt="Comunidade Ativa">
-            <h3>Comunidade Ativa</h3>
-            <p>Faça parte de um grupo engajado e compartilhe experiências.</p>
+            <div class="beneficio-conteudo">
+                <h3>Comunidade Ativa</h3>
+                <p>Faça parte de um grupo engajado e compartilhe experiências.</p>
+            </div>
         </div>
         <div class="beneficio">
-            <img src="beneficios.png" alt="Dinâmicas e Brincadeiras">
-            <h3>Dinâmicas e Brincadeiras</h3>
-            <p>Sempre temos dinâmicas e brincadeiras que movimentam e divertem a galera.</p>
+            <div class="beneficio-conteudo">
+                <h3>Dinâmicas e Brincadeiras</h3>
+                <p>Sempre temos dinâmicas e brincadeiras que movimentam e divertem a galera.</p>
+            </div>
         </div>
     </div>
 </section>
