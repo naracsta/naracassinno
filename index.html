@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre no Grupo e Comece a Lucrar!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f4f3e9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #FFD700; /* Dourado */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background-color: #1a1a1a; /* Fundo escuro */
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        header .btn {
+            display: inline-block;
+            background-color: #d40000; /* Vermelho */
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        header .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.7); /* Dourado */
+        }
+
+        /* Seções */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #FFD700; /* Dourado */
+        }
+
+        section p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: #333;
+        }
+
+        /* Benefícios */
+        .beneficios {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .beneficio {
+            background-color: #030303b6;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2); /* Dourado */
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .beneficio:hover {
+            transform: translateY(-10px);
+        }
+
+        .beneficio h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #FFD700; /* Dourado */
+        }
+
+        .beneficio p {
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        /* Depoimentos */
+        .depoimentos {
+            background-color: #f9f4f4;
+            padding: 40px 20px;
+        }
+
+        .depoimento {
+            background-color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2); /* Dourado */
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+
+        .depoimento p {
+            font-style: italic;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .depoimento span {
+            font-weight: 600;
+            color: #FFD700; /* Dourado */
+        }
+
+        /* Formulário */
+        .formulario {
+            background-color: #1a1a1a;
+            padding: 40px 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .formulario h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #FFD700; /* Dourado */
+        }
+
+        .formulario input,
+        .formulario textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .formulario input::placeholder,
+        .formulario textarea::placeholder {
+            color: #aaa;
+        }
+
+        .formulario button {
+            background-color: #d40000; /* Vermelho */
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .formulario button:hover {
+            background-color: #e65a50;
+        }
+
+        /* CTA Final */
+        #cta-final {
+            background: linear-gradient(90deg, #1a1a1a, #c01414);
+            padding: 60px 20px;
+        }
+
+        #cta-final .btn {
+            background-color: #d40000; /* Vermelho */
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        #cta-final .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.7); /* Dourado */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Jogue e Lucre com Nossa Equipe!</h1>
+        <p>Entre para o meu grupo exclusivo no Telegram e descubra como aumentar suas chances de ganhar dinheiro jogando.</p>
+        <a href="#formulario" class="btn">Entrar no Grupo Agora!</a>
+    </header>
+
+    <!-- Benefícios -->
+    <section id="beneficios">
+        <h2>Por Que Entrar no Grupo?</h2>
+        <div class="beneficios">
+            <div class="beneficio">
+                <h3>Estratégias Comprovadas</h3>
+                <p>Aprenda técnicas com altas taxas de sucesso para maximizar seus ganhos.</p>
+            </div>
+            <div class="beneficio">
+                <h3>Suporte Rápido</h3>
+                <p>Conte com o meu suporte sempre que precisar.</p>
+            </div>
+            <div class="beneficio">
+                <h3>Comunidade Ativa</h3>
+                <p>Faça parte de um grupo engajado e compartilhe experiências.</p>
+            </div>
+            <div class="beneficio">
+                <h3>Dinâmicas e Brincadeiras</h3>
+                <p>Sempre temos dinâmicas e brincadeiras que movimentam e divertem a galera.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos">
+        <h2>O Que Nossos Membros Dizem</h2>
+        <div class="depoimento">
+            <p>"O grupo mais divertido que eu já entrei."</p>
+            <span>- Nayara L.</span>
+        </div>
+        <div class="depoimento">
+            <p>"A melhor equipe! Sempre com dicas tops e suporte incrível."</p>
+            <span>- Tarcy F.</span>
+        </div>
+    </section>
+
+    <!-- Formulário -->
+    <section id="formulario">
+        <div class="formulario">
+            <h2>Se preferir preencha o formulario pra receber um link exclusivo.</h2>
+            <form action="https://formsubmit.co/seu-email@exemplo.com" method="POST">
+                <input type="text" name="nome" placeholder="Seu nome completo" required>
+                <input type="number" name="idade" placeholder="Sua idade" required>
+                <input type="tel" name="whatsapp" placeholder="Seu número do WhatsApp" required>
+                <input type="url" name="instagram" placeholder="Link do seu Instagram" required>
+                <button type="submit">Quero o link EXCLUSIVO!</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section id="cta-final">
+        <h2>Não Perca Tempo!</h2>
+        <p>Junte-se ao meu grupo agora e venha conhecer a minha panelinha.</p>
+        <a href="https://t.me/panelinhadanara" class="btn">Entrar no Grupo Agora!</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Redes sociais:</p>
+        <p>Insta: @nara_casssino</p>
+        <p>Telegram: @nara_csta</p>
+    </footer>
+</body>
+</html>
