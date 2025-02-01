@@ -40,11 +40,18 @@
             position: relative;
         }
 
-     header img {
-    width: 1000px; /* Ajuste o tamanho conforme necessário */
+header img {
+    max-width: 100%; /* A imagem não ultrapassa a largura do contêiner */
     height: auto; /* Mantém a proporção */
     display: block; /* Centraliza a imagem */
     margin: 0 auto 20px; /* Margem inferior de 20px */
+}
+
+/* Ajuste o tamanho máximo da imagem em telas maiores */
+@media (min-width: 768px) {
+    header img {
+        max-width: 500px; /* Tamanho máximo para desktops */
+    }
 }
 
         header h1 {
